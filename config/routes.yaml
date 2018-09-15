@@ -1,0 +1,3 @@
+#generator:
+#  path: /
+#  controller: App\Controller\GeneratorController::listCodes
