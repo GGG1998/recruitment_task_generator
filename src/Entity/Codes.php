@@ -26,9 +26,11 @@ class Codes
      */
     private $date_create;
 
-    public function __construct()
+    public function __construct($code="")
     {
-        $this->date_create = new DateTime();
+        $this->date_create = new \DateTime('now');
+        if(!empty($code))
+            $this->value = $code;
     }
 
     public function getId(): ?int

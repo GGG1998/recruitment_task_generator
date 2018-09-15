@@ -39,7 +39,7 @@ class UniqueCode {
         for($i=0; $i<$length; $i++)
             array_push($codes_array, [
                 "value"=>$this->real(),
-                "date_create"=> new \DateTime("now")]
+                "datecreate"=> new \DateTime("now")]
             );
         return $codes_array;
     }
