@@ -1,0 +1,20 @@
+<div class="table-responsive">
+    <table class="table table-striped table-sm">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Kod</th>
+            <th>Data utworzenia</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for code in codes %}
+            <tr>
+                <td>{{ loop.index }}</td>
+                <td>{{ code.value }}</td>
+                <td>{{ code.date_create|date("m/d/Y H:i:s") }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>

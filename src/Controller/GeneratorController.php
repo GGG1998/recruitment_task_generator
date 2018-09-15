@@ -11,16 +11,20 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
+use App\Utils\UniqueCode;
+
 class GeneratorController extends AbstractController {
 
     /**
      * @Route("/code/create/", name="codes_create")
+     * @param UniqueCode $uniqid
+     * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function createCodes() {
-        $number = random_int(0, 100);
+    public function createCodes(UniqueCode $uniqid) {
+        $codes = $uniqid->generateArray();
 
         return $this->render('codes/create.html.twig', [
-            'number' => $number,
+            'codes' => $codes,
         ]);
     }
 
