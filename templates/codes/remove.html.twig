@@ -1,3 +1,15 @@
 {% extends 'base.html.twig' %}
 {% block body %}
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Usuwanie kodów</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+            <div class="btn-group mr-2">
+                <a href="{{ path('codes_list') }}" class="btn btn-sm btn-outline-secondary">Wróć</a>
+            </div>
+        </div>
+    </div>
+    <p>Wpisz kody oddzielane enterami lub przecinkami</p>
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    {{ form_end(form) }}
 {% endblock %}

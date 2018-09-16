@@ -44,4 +44,14 @@ class UniqueCode {
         return $codes_array;
     }
 
+    public function parse(string $values): array {
+        $matches = array();
+        preg_match_all('/(\w+)/', $values,$matches);
+
+        if(isset($matches[1]))
+            return $matches[1];
+        else
+            return [];
+    }
+
 }
