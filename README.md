@@ -6,6 +6,9 @@ Web application to generate and manage unique codes.
 
 ##How it's run?
      git clone PLACE TO MY URL URL
+Inside root project to install dependencies
+
+     php composer.phar install
 Open file **_.env_** in root project
 
     # customize this line!
