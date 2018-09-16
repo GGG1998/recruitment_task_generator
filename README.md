@@ -4,8 +4,9 @@ Web application to generate and manage unique codes.
 **Generate view** shows 10 codes which was generated  
 **Remove view** shows form to put codes to remove if code is incorrect then will show exception
 
-##How it's run?
-     git clone PLACE TO MY URL URL
+##How it's run?  
+
+     git clone https://github.com/GGG1998/recruitment_task_generator.git
 Inside root project to install dependencies
 
      php composer.phar install
